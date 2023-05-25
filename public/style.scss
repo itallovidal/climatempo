@@ -11,7 +11,7 @@ main{
   transition: 100ms 500ms;
   height: var(--altura);
   overflow: hidden;
-  min-height: min-content;
+  min-height: 120px;
 
   article{
     overflow: hidden;
