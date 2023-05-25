@@ -68,7 +68,7 @@ main {
   transition: 100ms 500ms;
   height: var(--altura);
   overflow: hidden;
-  min-height: fit-content;
+  min-height: min-content;
 }
 main article {
   overflow: hidden;
