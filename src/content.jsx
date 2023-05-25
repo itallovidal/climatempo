@@ -4,7 +4,6 @@ import {Success} from "./success.jsx";
 import {Error} from "./error.jsx";
 
 export function Content({place}) {
-    document.querySelector('body').style.cssText = `--altura: ${1000}px`
 
     const [el, setElement] = React.useState(null)
 

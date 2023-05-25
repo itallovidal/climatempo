@@ -6,7 +6,7 @@ import {Error} from "./error.jsx";
 window.onload = ()=>{
     const main = document.querySelector('main')
 
-    document.querySelector('body').style.cssText = `--altura: ${main.offsetHeight}px`
+    document.querySelector('body').style.cssText = `--altura: ${main.offsetHeight * 1.5}px`
 
 }
 
