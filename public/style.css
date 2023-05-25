@@ -27,6 +27,21 @@
   grid-template-rows: auto 1fr;
 }
 
+.loading {
+  animation: loading 1200ms;
+}
+
+@keyframes loading {
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
 :root {
   font-size: 16px;
 }

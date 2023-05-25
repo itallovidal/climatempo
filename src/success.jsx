@@ -33,6 +33,10 @@ function getIcon(condition){
             return './images/neblina.png'
         case 'Possibilidade de chuva irregular':
             return './images/possibilidadechuva.png'
+        case 'Chuva forte':
+            return './images/chuvaforte.png'
+        case 'Encoberto':
+            return './images/encoberto.png'
         default:
             return './'
     }

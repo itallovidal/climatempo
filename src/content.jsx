@@ -8,6 +8,12 @@ export function Content({place}) {
     const [el, setElement] = React.useState(null)
 
     React.useEffect(()=>{
+        const main = document.querySelector('main')
+        main.classList.add('loading')
+        main.addEventListener('animationend', ()=>{
+            main.classList.remove('loading')
+        })
+
         getWeather(place)
             .then((response)=>{
                 if(response.data !== false){
