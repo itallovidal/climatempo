@@ -1,0 +1,32 @@
+.fade_in{
+  animation: fadeIn .4s .5s forwards;
+}
+
+.fade_out{
+  animation: fadeOut .5s forwards;
+}
+
+@keyframes fadeOut {
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.error{
+  grid-template-rows: auto 1fr;
+}
+
+.success{
+  grid-template-rows: auto 1fr;
+}

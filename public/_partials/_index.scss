@@ -1,0 +1,60 @@
+@use './_keyframes.scss' as *;
+
+$fonte: 'Jost', sans-serif;
+$fonte-2: 'Raleway', sans-serif;;
+$font-tamanho-h1: 2.5rem;
+$font-tamanho-h2: 2rem;
+$font-tamanho-h3: 1rem;
+$font-tamanho-p1: .8rem;
+$font-tamanho-p2: .5rem;
+
+$cor-1: #1ab38b;
+$cor-2: hsl(5, 85%, 63%);
+$cor-3: hsl(233, 8%, 79%);
+$cor-4: hsl(236, 13%, 42%);
+$cor-5: hsl(240, 100%, 5%);
+
+$esp-grande: 8%;
+$esp-medio: 5%;
+$esp-pequeno: 3%;
+
+:root{
+  font-size: 16px;
+  --altura: 12vh;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  max-height: fit-content;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body{
+  //background-image: linear-gradient(90deg, $cor-primaria, $cor-secundaria);
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  background-color: whitesmoke;
+}
+
+
+
+@mixin flexboxConfig($justify: center, $align: center, $direction: row)
+{
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
