@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {SearchBar} from "./SearchBar.jsx";
 import {Content} from "./content.jsx";
 import {Error} from "./error.jsx";
 
+window.onload = ()=>{
+    const main = document.querySelector('main')
 
+    document.querySelector('body').style.cssText = `--altura: ${main.offsetHeight}px`
+
+}
 
 function App() {
     const [place, setPlace] = React.useState(null)
     const [showError, setError] = React.useState(false)
-
     function check(){
         const placeGiven = document.querySelector('input').value
 

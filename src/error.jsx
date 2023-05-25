@@ -1,6 +1,5 @@
 export const Error = ({value})=>{
-
-    document.querySelector('body').style.cssText = "--altura: 30vh"
+    document.querySelector('body').style.cssText = `--altura: ${1000}px`
 
     if(value === 1){
         return (

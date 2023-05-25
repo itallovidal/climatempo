@@ -8,15 +8,14 @@ main{
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
   display: grid;
   grid-template-rows: auto 0fr;
-  transition: 100ms 500ms;
-  height: var(--altura);
+  transition: 1000ms;
+  max-height: var(--altura);
   overflow: hidden;
-  min-height: 120px;
+  //min-height: 120px;
 
   article{
-    overflow: hidden;
     width: 100%;
-    transition: .5s;
+    transition: 500ms 1000ms;
     margin: 0 0 ;
   }
 
@@ -127,12 +126,12 @@ main{
     }
 
     #container_nextDays{
-      margin-top: $esp-medio;
+      margin-top: $esp-grande;
+      padding-top: $esp-grande;
       border-top: 2px solid whitesmoke ;
       display: grid;
       grid-template-columns: 1fr 1fr;
       text-align: center;
-      height: 20vh;
 
       @media (max-height: 500px) {
         height: 35vh;
@@ -140,6 +139,10 @@ main{
 
       h1{
         font-size: $font-tamanho-h3;
+      }
+
+      div{
+        height: 150px;
       }
 
       picture img{

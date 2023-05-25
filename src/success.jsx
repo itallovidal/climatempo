@@ -40,7 +40,6 @@ function getIcon(condition){
 
 export const Success = ({data})=> {
     console.log(data)
-    document.querySelector('body').style.cssText = "--altura: 80vh"
 
     return (
         <>

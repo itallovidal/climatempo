@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {getWeather} from "./getWeather.jsx";
 import {Success} from "./success.jsx";
 import {Error} from "./error.jsx";
 
 export function Content({place}) {
-    console.log(place)
+    document.querySelector('body').style.cssText = `--altura: ${1000}px`
+
     const [el, setElement] = React.useState(null)
 
     React.useEffect(()=>{
@@ -18,6 +19,7 @@ export function Content({place}) {
                 }
             })
     }, [place])
+
 
     return el !== null ? el : null
 }
