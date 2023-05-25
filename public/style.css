@@ -71,7 +71,6 @@ main {
   min-height: 120px;
 }
 main article {
-  overflow: hidden;
   width: 100%;
   transition: 0.5s;
   margin: 0 0;
