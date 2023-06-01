@@ -38,7 +38,9 @@ function getIcon(condition){
         case 'Encoberto':
             return './images/encoberto.png'
         case 'Chuva moderada':
-            return './images/possibilidadechuva.png'
+            return './images/chuva.png'
+        case 'Chuva fraca':
+            return './images/chuvafraca.png'
         default:
             return './'
     }
