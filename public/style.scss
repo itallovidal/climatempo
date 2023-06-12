@@ -13,6 +13,10 @@ main{
   overflow: hidden;
   //min-height: 120px;
 
+  @media (max-width: 1400px){
+    padding: $esp-pequeno;
+  }
+
   article{
     width: 100%;
     transition: 500ms 1000ms;
@@ -68,7 +72,7 @@ main{
     #container_forecast{
       #container_icon{
         img{
-          height: 20vh;
+          height: 15vh;
         }
       }
       #container_forecastInfo{
@@ -120,6 +124,7 @@ main{
           #span_wind:after{
             content: ' kpm';
             font-size: 1rem;
+            font-family: $fonte;
           }
         }
       }
@@ -139,6 +144,11 @@ main{
 
       h1{
         font-size: $font-tamanho-h3;
+        font-family: $fonte;
+      }
+
+      p{
+        font-family: $fonte;
       }
 
       div{

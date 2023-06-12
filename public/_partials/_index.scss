@@ -75,3 +75,9 @@ body{
   align-items: $align;
   flex-direction: $direction;
 }
+
+@media (max-width: 1400px){
+  :root{
+    font-size: 12px;
+  }
+}

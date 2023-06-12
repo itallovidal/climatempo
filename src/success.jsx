@@ -5,7 +5,7 @@ function getWeekDay(d){
 
     switch (day){
         case 0:
-            return 'segunda'
+            return 'Segunda'
         case 1:
             return 'Terça'
         case 2:
@@ -47,7 +47,7 @@ function getIcon(condition){
 }
 
 export const Success = ({data})=> {
-    document.querySelector('body').style.cssText = `--altura: ${100}vh`
+    document.querySelector('body').style.cssText = `--altura: ${95}vh`
     console.log(data)
 
     return (

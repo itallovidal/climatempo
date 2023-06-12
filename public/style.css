@@ -71,6 +71,11 @@ body {
   background-color: whitesmoke;
 }
 
+@media (max-width: 1400px) {
+  :root {
+    font-size: 12px;
+  }
+}
 main {
   background-color: white;
   padding: 8%;
@@ -82,6 +87,11 @@ main {
   transition: 1000ms;
   max-height: var(--altura);
   overflow: hidden;
+}
+@media (max-width: 1400px) {
+  main {
+    padding: 3%;
+  }
 }
 main article {
   width: 100%;
@@ -128,7 +138,7 @@ main #container_success, main #container_error {
   animation: fadeIn 1000ms forwards;
 }
 main #container_success #container_forecast #container_icon img {
-  height: 20vh;
+  height: 15vh;
 }
 main #container_success #container_forecast #container_forecastInfo {
   text-align: center;
@@ -174,6 +184,7 @@ main #container_success #container_moreInfo .info div {
 main #container_success #container_moreInfo .info div #span_wind:after {
   content: " kpm";
   font-size: 1rem;
+  font-family: "Jost", sans-serif;
 }
 main #container_success #container_nextDays {
   margin-top: 8%;
@@ -190,6 +201,10 @@ main #container_success #container_nextDays {
 }
 main #container_success #container_nextDays h1 {
   font-size: 1rem;
+  font-family: "Jost", sans-serif;
+}
+main #container_success #container_nextDays p {
+  font-family: "Jost", sans-serif;
 }
 main #container_success #container_nextDays div {
   height: 150px;
